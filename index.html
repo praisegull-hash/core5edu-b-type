@@ -141,7 +141,7 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     linear-gradient(135deg,#0f1923 0%,#0c0c0c 40%,#111827 100%);
   color:#ffffff;
 }
-#hero .hero-label{color:rgba(255,255,255,0.5)}
+#hero .hero-label{color:#ffffff}
 #hero .hero-title{color:#ffffff}
 #hero .hero-title .dim{color:#EF4444}
 #hero .hero-desc{color:#000000}
@@ -149,8 +149,8 @@ section{padding:140px 0;border-top:1px solid var(--border)}
 #hero .hero-cta:hover{border-color:rgba(255,255,255,0.5);color:#ffffff}
 #hero .hero-stat-num{color:#ffffff}
 #hero .hero-stat-label{color:rgba(255,255,255,0.4)}
-#hero .hero-stats{border-color:rgba(255,255,255,0.1)}
-#hero .hero-stat{border-color:rgba(255,255,255,0.1)}
+#hero .hero-stats{border-color:rgba(255,255,255,0.5)!important}
+#hero .hero-stat{border-color:rgba(255,255,255,0.5)!important}
 #hero .hero-scroll{color:rgba(255,255,255,0.2)}
 #hero .hero-scroll::before{background:rgba(255,255,255,0.2)}
 .hero-grid-overlay{
@@ -160,8 +160,8 @@ section{padding:140px 0;border-top:1px solid var(--border)}
 }
 .hero-label{
   position:relative;z-index:2;
-  font-size:13px;letter-spacing:0.32em;text-transform:uppercase;
-  color:var(--white-40);margin-bottom:44px;
+  font-size:16px;letter-spacing:0.32em;text-transform:uppercase;
+  color:var(--white-40);margin-bottom:44px;margin-left:-3px;
 }
 .hero-title{
   position:relative;z-index:2;
@@ -183,10 +183,10 @@ section{padding:140px 0;border-top:1px solid var(--border)}
   margin-bottom:40px;
 }
 .hero-stats{
-  display:flex;gap:0;border:1px solid var(--border);
+  display:flex;gap:0;border:1px solid rgba(255,255,255,0.5);
 }
 .hero-stat{
-  padding:20px 38px;border-right:1px solid var(--border);flex:1;text-align:center;
+  padding:20px 38px;border-right:1px solid rgba(255,255,255,0.5);flex:1;text-align:center;
 }
 .hero-stat:last-child{border-right:none}
 .hero-stat-num{
@@ -551,7 +551,7 @@ section{padding:140px 0;border-top:1px solid var(--border)}
   .hero-title{font-size:clamp(52px,16vw,80px)}
   .hero-accent-img{width:160px;height:160px;right:16px;top:30%;opacity:0.4}
   .hero-stats{flex-direction:column;border:none;gap:1px}
-  .hero-stat{border-right:none;border-bottom:1px solid var(--border)}
+  .hero-stat{border-right:none;border-bottom:1px solid rgba(255,255,255,0.5)}
   .hero-stat:last-child{border-bottom:none}
   .about-body{grid-template-columns:1fr}
   .about-quote{grid-column:span 1}

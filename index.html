@@ -295,12 +295,13 @@ section{padding:140px 0;border-top:1px solid var(--border)}
   font-size:10px;letter-spacing:0.3em;color:var(--white-20);
   margin-bottom:36px;display:block;
 }
-.promise-icon{font-size:18px;margin-bottom:24px;display:block;opacity:0.4}
+.promise-icon{width:48px;height:48px;margin-bottom:24px;display:block}
+.promise-icon img{width:100%;height:100%}
 .promise-title{font-size:15px;font-weight:500;color:var(--white);margin-bottom:14px;line-height:1.35}
 .promise-desc{font-size:12px;color:var(--white-40);line-height:1.75}
 
 /* ── CHANGE ── */
-#change{background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url('img/change-bg.jpg') center/cover no-repeat}
+#change{background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url('https://images.unsplash.com/photo-1623150502742-6a849aa94be4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat fixed}
 .change-grid{
   display:grid;grid-template-columns:repeat(3,1fr);
   gap:1px;background:var(--border);
@@ -315,12 +316,10 @@ section{padding:140px 0;border-top:1px solid var(--border)}
   font-size:10px;letter-spacing:0.3em;color:var(--white-20);
   margin-bottom:28px;display:block;
 }
-.change-check{
-  width:16px;height:16px;border:1px solid var(--border-light);
-  display:inline-flex;align-items:center;justify-content:center;
-  margin-bottom:24px;
+.change-icon{
+  width:48px;height:48px;margin-bottom:24px;
 }
-.change-check::after{content:'✓';font-size:10px;color:var(--white-40)}
+.change-icon img{width:100%;height:100%}
 .change-title{font-size:15px;font-weight:500;color:var(--white);margin-bottom:14px;line-height:1.4}
 .change-desc{font-size:12px;color:var(--white-40);line-height:1.75}
 
@@ -339,7 +338,9 @@ section{padding:140px 0;border-top:1px solid var(--border)}
   width:100%;height:100%;
   display:flex;align-items:center;justify-content:center;
 }
-.instructor-photo-placeholder svg{opacity:0.6}
+.instructor-photo-placeholder img{
+  width:168px;height:auto;opacity:0.6;
+}
 .instructor-info{padding:40px}
 .instructor-index{
   font-size:10px;letter-spacing:0.3em;text-transform:uppercase;
@@ -751,31 +752,31 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     <div class="promise-grid fade-up" style="transition-delay:0.1s">
       <div class="promise-item">
         <span class="promise-num">01</span>
-        <span class="promise-icon">◻</span>
+        <div class="promise-icon"><img src="img/promise-icon-01.svg" alt=""></div>
         <div class="promise-title">진단 및<br>맞춤 계획</div>
         <div class="promise-desc">진단 테스트로 강점·취약점 파악 후 최적의 개인 학습 계획 수립. 획일적 수업이 아닌 1:1 밀착 관리.</div>
       </div>
       <div class="promise-item">
         <span class="promise-num">02</span>
-        <span class="promise-icon">◻</span>
+        <div class="promise-icon"><img src="img/promise-icon-02.svg" alt=""></div>
         <div class="promise-title">효율적<br>내신 대비</div>
         <div class="promise-desc">단순 암기가 아닌 기초 역량 강화. 학교별 기출 분석으로 시험 전 2주 집중 특강을 제공합니다.</div>
       </div>
       <div class="promise-item">
         <span class="promise-num">03</span>
-        <span class="promise-icon">◻</span>
+        <div class="promise-icon"><img src="img/promise-icon-03.svg" alt=""></div>
         <div class="promise-title">정확한<br>독해 지도</div>
         <div class="promise-desc">문법 공식화·논리적 맵핑으로 감이 아닌 분석으로 지문 해결. 서술형까지 완벽 대비합니다.</div>
       </div>
       <div class="promise-item">
         <span class="promise-num">04</span>
-        <span class="promise-icon">◻</span>
+        <div class="promise-icon"><img src="img/promise-icon-04.svg" alt=""></div>
         <div class="promise-title">고등 연계<br>로드맵</div>
         <div class="promise-desc">중등 영어 완성 = 고등 영어 미리 체화하는 것이 최종 목표. 수능 기초까지 이어지는 연계 커리큘럼.</div>
       </div>
       <div class="promise-item">
         <span class="promise-num">05</span>
-        <span class="promise-icon">◻</span>
+        <div class="promise-icon"><img src="img/promise-icon-05.svg" alt=""></div>
         <div class="promise-title">완벽한<br>피드백</div>
         <div class="promise-desc">테스트·클리닉·정기 상담으로 배운 지식을 완전히 내 것으로. 월 1회 학부모 정기 상담 포함.</div>
       </div>
@@ -799,37 +800,37 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     <div class="change-grid fade-up" style="transition-delay:0.1s">
       <div class="change-item">
         <span class="change-item-num">01</span>
-        <div class="change-check"></div>
+        <div class="change-icon"><img src="img/change-icon-01.svg" alt=""></div>
         <div class="change-title">소수 정예<br>밀착 관리</div>
         <div class="change-desc">적은 인원으로 선생님과의 긴밀한 소통을 유지하며 학습 공백 없이 관리합니다.</div>
       </div>
       <div class="change-item">
         <span class="change-item-num">02</span>
-        <div class="change-check"></div>
+        <div class="change-icon"><img src="img/change-icon-02.svg" alt=""></div>
         <div class="change-title">학교별 맞춤<br>커리큘럼</div>
         <div class="change-desc">학교마다 다른 교과서와 시험 범위를 반영한 맞춤형 커리큘럼을 제공합니다.</div>
       </div>
       <div class="change-item">
         <span class="change-item-num">03</span>
-        <div class="change-check"></div>
+        <div class="change-icon"><img src="img/change-icon-03.svg" alt=""></div>
         <div class="change-title">학생별 맞춤<br>학습 지도</div>
         <div class="change-desc">개인의 수준·성향·목표에 따라 다르게 접근하는 1:1 수준의 세밀한 지도입니다.</div>
       </div>
       <div class="change-item">
         <span class="change-item-num">04</span>
-        <div class="change-check"></div>
+        <div class="change-icon"><img src="img/change-icon-04.svg" alt=""></div>
         <div class="change-title">기출 예상<br>자료집 제공</div>
         <div class="change-desc">학교별 기출문제를 분석한 예상 자료집을 제공하여 내신 대비 효율을 극대화합니다.</div>
       </div>
       <div class="change-item">
         <span class="change-item-num">05</span>
-        <div class="change-check"></div>
+        <div class="change-icon"><img src="img/change-icon-05.svg" alt=""></div>
         <div class="change-title">성적 분석<br>자료 제공</div>
         <div class="change-desc">시험 후 오답 분석 및 성적 추이 리포트를 제공하여 다음 학습 방향을 명확히 합니다.</div>
       </div>
       <div class="change-item">
         <span class="change-item-num">06</span>
-        <div class="change-check"></div>
+        <div class="change-icon"><img src="img/change-icon-06.svg" alt=""></div>
         <div class="change-title">철저한 출결<br>학습 관리</div>
         <div class="change-desc">출석부터 과제 제출까지 학습 루틴 전반을 관리하여 지속 가능한 공부 습관을 형성합니다.</div>
       </div>
@@ -854,13 +855,7 @@ section{padding:140px 0;border-top:1px solid var(--border)}
       <div class="instructor-card">
         <div class="instructor-photo">
           <div class="instructor-photo-placeholder">
-            <svg viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg" width="168" height="218">
-              <circle cx="100" cy="65" r="45" fill="#d1d5db"/>
-              <ellipse cx="100" cy="210" rx="75" ry="50" fill="#d1d5db"/>
-              <circle cx="85" cy="58" r="4" fill="#9ca3af"/>
-              <circle cx="115" cy="58" r="4" fill="#9ca3af"/>
-              <path d="M90 75 Q100 85 110 75" stroke="#9ca3af" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            </svg>
+            <img src="img/instructor-placeholder.png" alt="">
           </div>
         </div>
         <div class="instructor-info">
@@ -878,13 +873,7 @@ section{padding:140px 0;border-top:1px solid var(--border)}
       <div class="instructor-card">
         <div class="instructor-photo">
           <div class="instructor-photo-placeholder">
-            <svg viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg" width="168" height="218">
-              <circle cx="100" cy="65" r="45" fill="#d1d5db"/>
-              <ellipse cx="100" cy="210" rx="75" ry="50" fill="#d1d5db"/>
-              <circle cx="85" cy="58" r="4" fill="#9ca3af"/>
-              <circle cx="115" cy="58" r="4" fill="#9ca3af"/>
-              <path d="M90 75 Q100 85 110 75" stroke="#9ca3af" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            </svg>
+            <img src="img/instructor-placeholder.png" alt="">
           </div>
         </div>
         <div class="instructor-info">

@@ -40,12 +40,10 @@ body{
   overflow-x:hidden;
   -webkit-font-smoothing:antialiased;
 }
-
 /* SCROLLBAR */
 ::-webkit-scrollbar{width:3px}
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:var(--border-light)}
-
 /* HEADER */
 #header{
   position:fixed;top:0;left:0;right:0;z-index:1000;
@@ -98,13 +96,10 @@ nav a:hover{color:var(--white)}
   background:var(--white-08)!important;
 }
 .mobile-btn{display:none;background:none;border:none;color:var(--white-40);cursor:pointer;padding:8px}
-
 /* CONTAINER */
 .container{max-width:1440px;margin:0 auto;padding:0 56px}
-
 /* SECTION STRUCTURE — reference pattern */
 section{padding:140px 0;border-top:1px solid var(--border)}
-
 /* SEC HEADER — matches reference: label+title left, description right, counter top-right, border below */
 .sec-header{
   display:grid;grid-template-columns:1fr 1fr;gap:80px;
@@ -130,7 +125,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
   font-size:10px;letter-spacing:0.22em;text-transform:uppercase;
   color:var(--white-20);
 }
-
 /* ── HERO ── */
 #hero{
   min-height:100vh;position:relative;overflow:hidden;
@@ -145,12 +139,12 @@ section{padding:140px 0;border-top:1px solid var(--border)}
 #hero .hero-title{color:#ffffff}
 #hero .hero-title .dim{color:#EF4444}
 #hero .hero-desc{color:#000000}
-#hero .hero-cta{color:#ffffff;border-color:#ffffff}
-#hero .hero-cta:hover{border-color:rgba(255,255,255,0.7);color:#ffffff}
+#hero .hero-cta{color:rgba(255,255,255,0.6);border-color:rgba(255,255,255,0.2)}
+#hero .hero-cta:hover{border-color:rgba(255,255,255,0.5);color:#ffffff}
 #hero .hero-stat-num{color:#ffffff}
-#hero .hero-stat-label{color:#ffffff}
-#hero .hero-stats{border-color:#ffffff!important}
-#hero .hero-stat{border-color:#ffffff!important}
+#hero .hero-stat-label{color:rgba(255,255,255,0.4)}
+#hero .hero-stats{border-color:rgba(255,255,255,0.5)!important}
+#hero .hero-stat{border-color:rgba(255,255,255,0.5)!important}
 #hero .hero-scroll{color:rgba(255,255,255,0.2)}
 #hero .hero-scroll::before{background:rgba(255,255,255,0.2)}
 .hero-grid-overlay{
@@ -223,7 +217,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
   0%,100%{filter:drop-shadow(0 0 4px rgba(239,68,68,0.3)) drop-shadow(0 0 8px rgba(168,85,247,0.2))}
   50%{filter:drop-shadow(0 0 12px rgba(239,68,68,0.75)) drop-shadow(0 0 20px rgba(168,85,247,0.55)) drop-shadow(0 0 28px rgba(6,182,212,0.35))}
 }
-
 /* ── ABOUT ── */
 #about{background:var(--bg)}
 #about .sec-label{font-size:15px;color:#43b9b0}
@@ -251,7 +244,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
 }
 .about-quote-mark{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--white-20);padding-top:4px;white-space:nowrap}
 .about-quote-text{font-size:22px;font-weight:500;color:var(--white-70);line-height:1.7;letter-spacing:-0.01em}
-
 /* ── SYSTEM ── */
 #system{
   background:linear-gradient(rgba(255,255,255,0.56),rgba(255,255,255,0.56)),url('img/core5-system-bg.png') center/cover no-repeat;
@@ -277,7 +269,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
 .system-name{font-size:20px;font-weight:400;letter-spacing:-0.01em;color:var(--white);margin-bottom:4px}
 .system-eng{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--white-20)}
 .system-desc{font-size:16px;color:var(--white-70);line-height:1.8;padding-top:2px}
-
 /* ── PROMISES ── */
 #promises{background:var(--bg)}
 #promises .sec-sub{font-size:20px}
@@ -299,7 +290,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
 .promise-icon img{width:100%;height:100%}
 .promise-title{font-size:15px;font-weight:500;color:var(--white);margin-bottom:14px;line-height:1.35}
 .promise-desc{font-size:12px;color:var(--white-40);line-height:1.75}
-
 /* ── CHANGE ── */
 #change{background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url('https://images.unsplash.com/photo-1623150502742-6a849aa94be4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat fixed}
 .change-grid{
@@ -322,7 +312,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
 .change-icon img{width:100%;height:100%}
 .change-title{font-size:15px;font-weight:500;color:var(--white);margin-bottom:14px;line-height:1.4}
 .change-desc{font-size:12px;color:var(--white-40);line-height:1.75}
-
 /* ── INSTRUCTORS ── */
 #instructors{background:var(--bg)}
 .instructor-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
@@ -355,7 +344,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
   border:1px solid var(--border);color:var(--white-20);
   padding:5px 12px;
 }
-
 /* ── REVIEWS ── */
 #reviews{background:var(--surface)}
 .review-slider-wrap{position:relative;overflow:hidden}
@@ -389,7 +377,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
 .review-progress{flex:1;height:1px;background:var(--border);position:relative}
 .review-progress-bar{position:absolute;top:0;left:0;height:100%;background:var(--white-40);transition:width 0.4s ease}
 .review-count{font-size:10px;letter-spacing:0.22em;color:var(--white-20)}
-
 /* ── FACILITIES ── */
 #facilities{background:var(--bg)}
 .facility-grid{
@@ -410,7 +397,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
   color:#333;background:rgba(255,255,255,0.65);
   padding:6px 14px;backdrop-filter:blur(8px);
 }
-
 /* ── CONTACT ── */
 #contact{background:var(--surface)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}
@@ -456,7 +442,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
 .form-success.show{display:block}
 .form-success h3{font-size:18px;font-weight:400;color:var(--white);margin-bottom:12px}
 .form-success p{font-size:13px;color:var(--white-40)}
-
 /* ── FOOTER ── */
 #footer{
   border-top:1px solid rgba(255,255,255,0.08);
@@ -499,7 +484,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
 .footer-links{display:flex;gap:24px}
 .footer-links a{font-size:10px;color:var(--white-20);text-decoration:none;letter-spacing:0.1em;transition:color var(--transition)}
 .footer-links a:hover{color:var(--white-40)}
-
 /* ── FLOATING ── */
 .float-btns{
   position:fixed;right:32px;bottom:32px;z-index:900;
@@ -514,11 +498,9 @@ section{padding:140px 0;border-top:1px solid var(--border)}
   box-shadow:0 2px 12px rgba(0,0,0,0.08);
 }
 .float-btn:hover{border-color:rgba(0,0,0,0.3);color:#0d0d0d}
-
 /* ── FADE IN ── */
 .fade-up{opacity:0;transform:translateY(28px);transition:opacity 0.8s ease,transform 0.8s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
-
 /* ── MOBILE ── */
 @media(max-width:1200px){
   .header-inner,.container,.footer-inner,.footer-bottom{padding-left:40px;padding-right:40px}
@@ -567,8 +549,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
 </style>
 </head>
 <body>
-
-<!-- HEADER -->
 <header id="header">
   <div class="header-inner">
     <a href="#hero" class="logo">
@@ -591,8 +571,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     </button>
   </div>
 </header>
-
-<!-- HERO -->
 <section id="hero">
   <div class="hero-grid-overlay" aria-hidden="true"></div>
   <img src="img/hero-image.png" alt="" class="hero-accent-img" aria-hidden="true">
@@ -626,8 +604,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     <div class="hero-scroll">SCROLL TO EXPLORE</div>
   </div>
 </section>
-
-<!-- ABOUT -->
 <section id="about">
   <div class="container">
     <div class="sec-header fade-up">
@@ -672,8 +648,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     </div>
   </div>
 </section>
-
-<!-- CORE5 SYSTEM -->
 <section id="system">
   <div class="container">
     <div class="sec-header fade-up">
@@ -735,8 +709,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     </div>
   </div>
 </section>
-
-<!-- PROMISES -->
 <section id="promises">
   <div class="container">
     <div class="sec-header fade-up">
@@ -783,8 +755,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     </div>
   </div>
 </section>
-
-<!-- 3-MONTH CHANGE -->
 <section id="change">
   <div class="container">
     <div class="sec-header fade-up">
@@ -837,8 +807,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     </div>
   </div>
 </section>
-
-<!-- INSTRUCTORS -->
 <section id="instructors">
   <div class="container">
     <div class="sec-header fade-up">
@@ -891,8 +859,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     </div>
   </div>
 </section>
-
-<!-- REVIEWS -->
 <section id="reviews">
   <div class="container">
     <div class="sec-header fade-up">
@@ -984,8 +950,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     </div>
   </div>
 </section>
-
-<!-- FACILITIES -->
 <section id="facilities">
   <div class="container">
     <div class="sec-header fade-up">
@@ -1022,8 +986,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     </div>
   </div>
 </section>
-
-<!-- CONTACT -->
 <section id="contact">
   <div class="container">
     <div class="sec-header fade-up">
@@ -1105,8 +1067,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     </div>
   </div>
 </section>
-
-<!-- FOOTER -->
 <footer id="footer">
   <div class="footer-inner">
     <div>
@@ -1153,8 +1113,6 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     </div>
   </div>
 </footer>
-
-<!-- FLOATING BTNS -->
 <div class="float-btns">
   <a href="tel:031-8027-8281" class="float-btn" aria-label="전화 상담" title="031-8027-8281">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -1172,65 +1130,5 @@ section{padding:140px 0;border-top:1px solid var(--border)}
     </svg>
   </a>
 </div>
-
-<script>
-// FADE IN
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if(e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.07, rootMargin: '0px 0px -40px 0px' });
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-// HEADER SCROLL
-window.addEventListener('scroll', () => {
-  document.getElementById('header').classList.toggle('scrolled', scrollY > 80);
-}, { passive: true });
-
-// MOBILE MENU
-function toggleMenu() {
-  const nav = document.querySelector('nav');
-  const isOpen = nav.style.display === 'flex';
-  if(isOpen) {
-    nav.removeAttribute('style');
-  } else {
-    Object.assign(nav.style, {
-      display:'flex', position:'fixed', top:'64px', left:'0', right:'0',
-      background:'rgba(255,255,255,0.98)', flexDirection:'column',
-      padding:'24px', gap:'0', borderBottom:'1px solid rgba(0,0,0,0.08)',
-      backdropFilter:'blur(20px)'
-    });
-  }
-}
-
-// REVIEW SLIDER
-let current = 0;
-const total = 5;
-const track = document.getElementById('reviewTrack');
-const progress = document.getElementById('reviewProgress');
-const countEl = document.getElementById('reviewCount');
-
-function updateReview() {
-  const perSlide = window.innerWidth < 900 ? 100 : 50;
-  track.style.transform = `translateX(-${current * perSlide}%)`;
-  progress.style.width = `${((current + 1) / total) * 100}%`;
-  countEl.textContent = `${String(current + 1).padStart(2,'0')} / ${String(total).padStart(2,'0')}`;
-}
-
-function nextReview() { current = (current + 1) % total; updateReview(); resetAuto(); }
-function prevReview() { current = (current - 1 + total) % total; updateReview(); resetAuto(); }
-
-let autoTimer = setInterval(nextReview, 5500);
-function resetAuto() { clearInterval(autoTimer); autoTimer = setInterval(nextReview, 5500); }
-window.addEventListener('resize', updateReview);
-updateReview();
-
-// FORM
-function submitForm(e) {
-  e.preventDefault();
-  document.getElementById('contactForm').style.display = 'none';
-  document.getElementById('formSuccess').classList.add('show');
-}
-</script>
 </body>
 </html>

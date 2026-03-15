@@ -215,6 +215,7 @@ section{padding:140px 0;border-top:1px solid var(--border)}
   animation:heroSpin 60s linear infinite, heroOutglow 3s ease-in-out infinite, heroPulse 4s ease-in-out infinite;
 }
 @keyframes heroSpin{from{transform:translateY(-50%) rotate(0deg)}to{transform:translateY(-50%) rotate(360deg)}}
+@keyframes heroSpinMobile{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 @keyframes heroPulse{
   0%,100%{scale:1}
   50%{scale:1.03}
@@ -545,12 +546,13 @@ section{padding:140px 0;border-top:1px solid var(--border)}
 }
 @media(max-width:640px){
   .header-inner,.container,.footer-inner,.footer-bottom{padding-left:24px;padding-right:24px}
-  #hero{padding:0 24px 56px}
+  #hero{padding:67px 24px 56px;justify-content:flex-start}
   nav{display:none}
   .mobile-btn{display:block}
   section{padding:72px 0}
   .hero-title{font-size:clamp(52px,16vw,80px)}
-  .hero-accent-img{width:160px;height:160px;right:16px;top:30%;opacity:0.4}
+  .hero-label{margin-bottom:0}
+  .hero-accent-img{width:396px;height:396px;left:177px;top:104px;right:auto;transform:none;opacity:0.85;animation:heroSpinMobile 60s linear infinite,heroOutglow 3s ease-in-out infinite,heroPulse 4s ease-in-out infinite}
   .hero-stats{flex-direction:column;border:none;gap:1px}
   .hero-stat{border-right:none;border-bottom:1px solid rgba(255,255,255,0.5)}
   .hero-stat:last-child{border-bottom:none}
@@ -600,7 +602,7 @@ section{padding:140px 0;border-top:1px solid var(--border)}
   <h1 class="hero-title fade-up" style="transition-delay:0.1s">
     3개월의<br>
     <span class="dim">놀라운</span><br>
-    변화
+    1변화
   </h1>
   <div class="hero-bottom fade-up" style="transition-delay:0.2s">
     <div class="hero-desc-block">

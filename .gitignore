@@ -1,0 +1,8 @@
+figma_snapshot.json
+*_curr.json
+contact_*.json
+facilities_*.json
+hero_*.json
+node*.json
+sections_*.json
+.wrangler/
